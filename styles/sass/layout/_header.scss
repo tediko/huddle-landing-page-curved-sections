@@ -1,0 +1,40 @@
+.header {
+    $root: &;
+    margin-bottom: 86px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 26px;
+
+        @include breakpoint('md') {
+            padding: 50px 35px;
+        }
+
+        @include breakpoint('lg') {
+            max-width: 1390px;
+            margin: 0 auto;
+            padding: 79px 40px;
+        }
+    }
+
+    &__logo {
+        img {
+            display: block;
+            width: 94px;
+
+            @include breakpoint('sm') {
+                width: 50%;
+            }
+
+            @include breakpoint('md') {
+                width: 80%;
+            }
+
+            @include breakpoint('lg') {
+                width: 100%;
+            }
+        }
+    }
+}
