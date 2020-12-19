@@ -1,0 +1,33 @@
+.h {
+    color: #000;
+
+    &--xlg {
+        font-size: 1.5rem;
+
+        @include breakpoint('md') {
+            font-size: 2.3rem;
+        }
+
+        @include breakpoint('lg') {
+            font-size: 3rem;
+        }
+    }
+
+}
+
+.text {
+    color: #000;
+
+    &--lg {
+        font-size: 0.87rem;
+        line-height: 1.56;
+
+        @include breakpoint('md') {
+            font-size: 1rem;
+        }
+
+        @include breakpoint('lg') {
+            font-size: 1.25rem;
+        }
+    }
+}
