@@ -2,6 +2,10 @@
     $root: &;
     margin-bottom: 86px;
 
+    @include breakpoint('lg') {
+        margin-bottom: 151px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
