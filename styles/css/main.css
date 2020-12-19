@@ -4,6 +4,47 @@
 /* Mixin to manage responsive breakpoints */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.h {
+  color: #000;
+}
+
+.h--xlg {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .h--xlg {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .h--xlg {
+    font-size: 3rem;
+  }
+}
+
+.text {
+  color: #000;
+}
+
+.text--lg {
+  font-size: 0.87rem;
+  line-height: 1.56;
+}
+
+@media (min-width: 769px) {
+  .text--lg {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text--lg {
+    font-size: 1.25rem;
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../../assets/fonts/icomoon.eot?psmyk5");
@@ -77,5 +118,215 @@ h1, h2, h3, h4, h5, h6 {
 a:focus, input:focus, button:focus {
   outline-offset: 5px;
   outline: 2px solid rgba(255, 82, 191, 0.5);
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cta--sm {
+  width: 80px;
+  height: 26px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #ff52bf;
+  border: 1px solid #ff52bf;
+  border-radius: 30px;
+}
+
+@media (min-width: 481px) {
+  .cta--sm {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta--sm {
+    width: 120px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cta--sm {
+    width: 135px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+.cta--start {
+  width: 196px;
+  height: 40px;
+  background: #ff52bf;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 769px) {
+  .cta--start {
+    width: 250px;
+    height: 60px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cta--start {
+    width: 398px;
+    height: 80px;
+    font-size: 1.3rem;
+  }
+}
+
+.header {
+  margin-bottom: 86px;
+}
+
+@media (min-width: 1025px) {
+  .header {
+    margin-bottom: 151px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 26px;
+}
+
+@media (min-width: 769px) {
+  .header__container {
+    padding: 50px 35px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header__container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 79px 40px;
+  }
+}
+
+.header__logo img {
+  display: block;
+  width: 94px;
+}
+
+@media (min-width: 481px) {
+  .header__logo img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__logo img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header__logo img {
+    width: 100%;
+  }
+}
+
+.kv {
+  margin-bottom: 100px;
+}
+
+.kv__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.kv__heading {
+  margin-bottom: 23px;
+}
+
+.kv__text {
+  margin-bottom: 44px;
+  max-width: 425px;
+}
+
+@media (min-width: 769px) {
+  .kv__text {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .kv__text {
+    max-width: 630px;
+  }
+}
+
+.kv__cta {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1025px) {
+  .kv__cta {
+    margin-bottom: 110px;
+  }
+}
+
+.kv__hero img {
+  width: 100%;
+}
+
+.stats__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.stats__card {
+  display: flex;
+  flex-flow: column;
+  min-width: 190px;
+}
+
+.stats__card:not(:last-child) {
+  margin-bottom: 83px;
+}
+
+.stats__card-icon {
+  align-self: flex-start;
+}
+
+.stats__card-icon i {
+  background: linear-gradient(to bottom, #ff52bf, #ff8fd8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 100%;
+  color: transparent;
+  font-size: 1.7rem;
+}
+
+.stats__card-counter {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.stats__card-desc {
+  color: gray;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

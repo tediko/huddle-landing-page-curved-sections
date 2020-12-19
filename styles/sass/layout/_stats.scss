@@ -1,0 +1,42 @@
+.stats {
+    $root: &;
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-flow: column;
+        min-width: 190px;
+
+        &:not(:last-child) {
+            margin-bottom: 83px;
+        }
+    }
+
+    &__card-icon {
+        align-self: flex-start;
+
+        i {
+            background: linear-gradient(to bottom, $c-pink, $c-pink-light);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 100%;
+            color: transparent;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__card-counter {
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+
+    &__card-desc {
+        color: gray;
+        text-align: center;
+    }
+}
