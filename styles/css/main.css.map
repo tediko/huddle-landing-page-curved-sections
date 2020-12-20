@@ -13,7 +13,8 @@
         "../sass/components/_buttons.scss",
         "../sass/layout/_header.scss",
         "../sass/layout/_kv.scss",
-        "../sass/layout/_stats.scss"
+        "../sass/layout/_stats.scss",
+        "../sass/layout/_about.scss"
     ],
     "names": [],
     "file": "main.css"
