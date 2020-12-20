@@ -5,6 +5,17 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+
+        @include breakpoint('sm') {
+            flex-flow: row;
+            justify-content: space-evenly;
+        }
+
+        @include breakpoint('lg') {
+            justify-content: space-between;
+            max-width: 880px;
+            margin: 0 auto;
+        }
     }
 
     &__card {
@@ -14,6 +25,10 @@
 
         &:not(:last-child) {
             margin-bottom: 83px;
+
+            @include breakpoint('sm') {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -26,17 +41,23 @@
             -webkit-background-clip: text;
             background-size: 100%;
             color: transparent;
-            font-size: 1.7rem;
+            font-size: clamp(1.7rem, 3vw, 2rem);
         }
     }
 
     &__card-counter {
-        font-size: 3.8rem;
+        font-size: clamp(3.8rem, 7vw, 6rem);
         font-weight: 700;
+        color: $c-cyan-very-dark;
+
+        @include breakpoint('lg') {
+            margin-bottom: 10px;
+        }
     }
 
     &__card-desc {
         color: gray;
         text-align: center;
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
 }
