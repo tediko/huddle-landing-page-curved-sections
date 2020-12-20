@@ -17,20 +17,8 @@
 }
 
 .text--lg {
-  font-size: 0.87rem;
   line-height: 1.56;
-}
-
-@media (min-width: 769px) {
-  .text--lg {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .text--lg {
-    font-size: 1.25rem;
-  }
+  font-size: clamp(0.87rem, 2vw, 1.25rem);
 }
 
 @font-face {

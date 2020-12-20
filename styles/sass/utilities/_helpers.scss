@@ -4,21 +4,14 @@
     &--xlg {
         font-size: clamp(1.5rem, 3vw, 3rem);
     }
+
 }
 
 .text {
     color: #000;
 
     &--lg {
-        font-size: 0.87rem;
         line-height: 1.56;
-
-        @include breakpoint('md') {
-            font-size: 1rem;
-        }
-
-        @include breakpoint('lg') {
-            font-size: 1.25rem;
-        }
+        font-size: clamp(0.87rem, 2vw, 1.25rem);
     }
 }
