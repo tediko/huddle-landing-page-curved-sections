@@ -9,7 +9,7 @@
 }
 
 .h--xlg {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .text {
@@ -163,7 +163,7 @@ a:focus, input:focus, button:focus {
 }
 
 .kv {
-  margin-bottom: 100px;
+  margin-bottom: 117px;
 }
 
 .kv__container {
@@ -215,6 +215,21 @@ a:focus, input:focus, button:focus {
   align-items: center;
 }
 
+@media (min-width: 481px) {
+  .stats__container {
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1025px) {
+  .stats__container {
+    justify-content: space-between;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}
+
 .stats__card {
   display: flex;
   flex-flow: column;
@@ -223,6 +238,12 @@ a:focus, input:focus, button:focus {
 
 .stats__card:not(:last-child) {
   margin-bottom: 83px;
+}
+
+@media (min-width: 481px) {
+  .stats__card:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .stats__card-icon {
@@ -235,16 +256,24 @@ a:focus, input:focus, button:focus {
   -webkit-background-clip: text;
   background-size: 100%;
   color: transparent;
-  font-size: 1.7rem;
+  font-size: clamp(1.7rem, 3vw, 2rem);
 }
 
 .stats__card-counter {
-  font-size: 3.8rem;
+  font-size: clamp(3.8rem, 7vw, 6rem);
   font-weight: 700;
+  color: #00252e;
+}
+
+@media (min-width: 1025px) {
+  .stats__card-counter {
+    margin-bottom: 10px;
+  }
 }
 
 .stats__card-desc {
   color: gray;
   text-align: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 /*# sourceMappingURL=main.css.map */
