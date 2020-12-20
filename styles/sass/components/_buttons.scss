@@ -7,53 +7,23 @@
     cursor: pointer;
 
     &--sm {
-        width: 80px;
-        height: 26px;
-        font-size: 0.6rem;
+        width: calc(min(max(20vw, 80px), 135px));
+        height: calc(min(max(6vw, 26px), 40px));
+        font-size: clamp(0.6rem, 2vw, 1rem);
         font-weight: 500;
         color: $c-pink;
         border: 1px solid $c-pink;
         border-radius: 30px;
-
-        @include breakpoint('sm') {
-            width: 100px;
-            height: 30px;
-            font-size: 0.8rem;
-        }
-
-        @include breakpoint('md') {
-            width: 120px;
-            height: 35px;
-            font-size: 0.8rem;
-        }
-
-        @include breakpoint('lg') {
-            width: 135px;
-            height: 40px;
-            font-size: 1rem;
-        }
     }
 
     &--start {
-        width: 196px;
-        height: 40px;
+        width: calc(min(max(45vw, 196px), 398px));
+        height: calc(min(max(6vw, 40px), 80px));
         background: $c-pink;
-        font-size: 0.75rem;
+        font-size: clamp(0.75rem, 2vw, 1.3rem);
         font-weight: 600;
         color: #fff;
         border-radius: 40px;
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
-
-        @include breakpoint('md') {
-            width: 250px;
-            height: 60px;
-            font-size: 1rem;
-        }
-
-        @include breakpoint('lg') {
-            width: 398px;
-            height: 80px;
-            font-size: 1.3rem;
-        }
     }
 }
