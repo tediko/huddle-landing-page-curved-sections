@@ -159,7 +159,7 @@ a:focus, input:focus, button:focus {
 
 .header__logo img {
   display: block;
-  width: calc(min(26vw, 240px));
+  width: calc(min(max(20vw, 98px), 240px));
 }
 
 .kv {
