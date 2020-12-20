@@ -26,19 +26,7 @@
     &__logo {
         img {
             display: block;
-            width: 94px;
-
-            @include breakpoint('sm') {
-                width: 50%;
-            }
-
-            @include breakpoint('md') {
-                width: 80%;
-            }
-
-            @include breakpoint('lg') {
-                width: 100%;
-            }
+            width: calc(min(26vw, 240px));
         }
     }
 }

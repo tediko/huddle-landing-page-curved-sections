@@ -223,25 +223,7 @@ a:focus, input:focus, button:focus {
 
 .header__logo img {
   display: block;
-  width: 94px;
-}
-
-@media (min-width: 481px) {
-  .header__logo img {
-    width: 50%;
-  }
-}
-
-@media (min-width: 769px) {
-  .header__logo img {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1025px) {
-  .header__logo img {
-    width: 100%;
-  }
+  width: calc(min(26vw, 240px));
 }
 
 .kv {
