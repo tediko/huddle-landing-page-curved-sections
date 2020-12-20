@@ -2,17 +2,8 @@
     color: #000;
 
     &--xlg {
-        font-size: 1.5rem;
-
-        @include breakpoint('md') {
-            font-size: 2.3rem;
-        }
-
-        @include breakpoint('lg') {
-            font-size: 3rem;
-        }
+        font-size: clamp(1.5rem, 2vw, 3rem);
     }
-
 }
 
 .text {
