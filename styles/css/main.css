@@ -5,11 +5,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 .h {
-  color: #000;
+  color: #00252e;
 }
 
 .h--xlg {
   font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.h--lg {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .h--big {
@@ -292,6 +296,16 @@ a:focus, input:focus, button:focus {
   font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
+.about {
+  margin-bottom: 59px;
+}
+
+@media (min-width: 1025px) {
+  .about {
+    margin-bottom: 152px;
+  }
+}
+
 .about__bg {
   display: block;
   width: 100%;
@@ -373,7 +387,6 @@ a:focus, input:focus, button:focus {
 
 .about__card-title {
   margin-bottom: 13px;
-  color: #00252e;
 }
 
 .about__card-desc {
@@ -410,5 +423,21 @@ a:focus, input:focus, button:focus {
   .about__card-image img {
     width: 100%;
   }
+}
+
+.start {
+  margin-bottom: 80px;
+}
+
+.start__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.start__title {
+  text-align: center;
+  margin-bottom: 38px;
 }
 /*# sourceMappingURL=main.css.map */

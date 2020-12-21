@@ -1,8 +1,12 @@
 .h {
-    color: #000;
+    color: $c-cyan-very-dark;
 
     &--xlg {
         font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    &--lg {
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
 
     &--big {
