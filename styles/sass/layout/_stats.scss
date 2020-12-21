@@ -1,6 +1,10 @@
 .stats {
     $root: &;
 
+    @include breakpoint('lg') {
+        margin-bottom: 133px;
+    }
+
     &__container {
         display: flex;
         flex-flow: column;
