@@ -1,5 +1,10 @@
 .about {
     $root: &;
+    margin-bottom: 59px;
+
+    @include breakpoint('lg') {
+        margin-bottom: 152px;
+    }
 
     &__bg {
         display: block;
@@ -70,7 +75,6 @@
 
     &__card-title {
         margin-bottom: 13px;
-        color: $c-cyan-very-dark;
     }
 
     &__card-desc {
