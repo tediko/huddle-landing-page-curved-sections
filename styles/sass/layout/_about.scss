@@ -15,6 +15,16 @@
         position: relative;
         background: $c-blue-very-pale;
 
+        &.anim {
+            #{$root}__card-content {
+                animation: slide-left 1000ms ease-in forwards;
+            }
+
+            #{$root}__card-image {
+                animation: slide-right 1000ms ease-in forwards;
+            }
+        }
+
         &--white {
             background: #fff;
 

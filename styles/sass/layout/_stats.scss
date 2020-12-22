@@ -5,6 +5,18 @@
         margin-bottom: 133px;
     }
 
+    &.anim {
+        #{$root}__card {
+            &:first-child {
+                animation: slide-left 1000ms ease-in forwards;
+            }
+
+            &:last-child {
+                animation: slide-right 1000ms ease-in forwards;
+            }
+        }
+    }
+
     &__container {
         display: flex;
         flex-flow: column;
