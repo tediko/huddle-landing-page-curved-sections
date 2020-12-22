@@ -149,12 +149,27 @@
     }
 
     &__news-form {
+        position: relative;
         display: flex;
         flex-flow: column;
 
         @include breakpoint('lg') {
             flex-flow: row;
             justify-content: space-between;
+        }
+
+        &.error {
+            #{$root}__news-input {
+                border: 1px solid toamto;
+            }
+
+            #{$root}__news-error {
+                visibility: visible;
+                height: 20px;
+                margin-top: -10px;
+                margin-bottom: 5px;
+                animation: footer-error-shake 300ms ease-in;
+            }
         }
     }
 
@@ -170,6 +185,27 @@
             max-width: 323px;
             margin-bottom: 0px;
             margin-right: 15px;
+        }
+
+        &:invalid {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    &__news-error {
+        visibility: hidden;
+        display: block;
+        height: 0px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: tomato;
+        transition: height 250ms ease-in;
+
+        @include breakpoint('lg') {
+            position: absolute;
+            top: 65px;
+            left: 0;
         }
     }
 
