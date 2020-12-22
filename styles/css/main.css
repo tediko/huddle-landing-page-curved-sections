@@ -415,6 +415,7 @@ a:focus, input:focus, button:focus {
 }
 
 .stats__card {
+  opacity: 0;
   display: flex;
   flex-flow: column;
   min-width: 190px;
@@ -547,6 +548,7 @@ a:focus, input:focus, button:focus {
 }
 
 .about__card-content {
+  opacity: 0;
   order: 1;
 }
 
@@ -575,6 +577,7 @@ a:focus, input:focus, button:focus {
 }
 
 .about__card-image {
+  opacity: 0;
   order: 0;
   margin-bottom: 72px;
 }
@@ -600,6 +603,7 @@ a:focus, input:focus, button:focus {
 
 .start {
   margin-bottom: 248px;
+  opacity: 0;
 }
 
 .start.anim {

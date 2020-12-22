@@ -1,6 +1,7 @@
 .start {
     $root: &;
     margin-bottom: 248px;
+    opacity: 0;
 
     &.anim {
         animation: opacity 1000ms ease-in forwards;
