@@ -1,6 +1,10 @@
 .start {
     $root: &;
-    margin-bottom: 80px;
+    margin-bottom: 248px;
+
+    @include breakpoint('lg') {
+        margin-bottom: 178px;
+    }
 
     &__container {
         display: flex;
