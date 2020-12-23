@@ -475,6 +475,7 @@ a:focus, input:focus, button:focus {
 .about__bg {
   display: block;
   width: 100%;
+  margin-bottom: -1px;
 }
 
 .about__card {
@@ -631,6 +632,7 @@ a:focus, input:focus, button:focus {
 .footer__bg {
   display: block;
   width: 100%;
+  margin-bottom: -1px;
 }
 
 .footer__container {
